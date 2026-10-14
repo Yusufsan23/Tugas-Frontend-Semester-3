@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS Modern</title>
+    <script src="assets/js/logic.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Pemesanan Produk UMKM</h1>
+    <section class="card form-section">
+        <h2>Tambah Produk Baru</h2>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Nama Produk:</label>
+                <input type="text" id="product-name" placeholder="Contoh: Keripik Pisang">
+                <p id="preview-teks"
+                    style="color: rgb(25, 25, 25); font-style: italic; margin-top: 5px; font-size: 0.9em;"></p>
+            </div>
+            <div class="form-group">
+                <label for="product-category">Kategori:</label>
+                <select id="product-category">
+                    <option value="">Pilih Kategori</option>
+                    <option value="Makanan">Makanan</option>
+                    <option value="Minuman">Minuman</option>
+                    <option value="Cemilan">Cemilan</option>
+                    <option value="Bahan">Bahan</option>
+                    <p id="preview-kategori" style="color: rgb(25, 25, 25); font-style: italic; margin-top: 5px; font-size: 0.9em;"></p>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="product-price">Harga (Rp):</label>
+                <input type="number" id="product-price" min="1000" placeholder="Contoh: 350000">
+                <p id="preview-harga"
+                    style="color: rgb(25, 25, 25); font-style: italic; margin-top: 5px; font-size: 0.9em;"></p>
+            </div>
+            <div class="form-group">
+                <label for="stok">Stok:</label>
+                <input type="number" id="stok" min="1" placeholder="Contoh: 10">
+                <p id="preview-stok"
+                    style="color: rgb(25, 25, 25); font-style: italic; margin-top: 5px; font-size: 0.9em;"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan ke Mock Data</button>
+        </form>
+        <div id="form-feedback" class="feedback-msg"></div>
+        <div class="form-group">
+            <p id="preview-teks" style="color: rgb(25, 25, 25); font-style: italic; margin-top: 5px; font-size: 0.9em;">
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
