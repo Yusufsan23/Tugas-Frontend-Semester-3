@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - E-Katalog UMKM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="admin-header">
+        <h1>Dashboard Admin UMKM</h1>
+        <nav class="admin-nav">
+            <ul>
+                <li><a href="dashboard.html" class="active">Data Produk (Tabel)</a></li>
+                <li><a href="form.html">Tambah Produk (Form)</a></li>
+                <li><a href="produkcard.html">Etalase UI (Card)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="dashboard-info">
+            <h2>Daftar Inventaris Barang</h2>
+            <p>Kelola data produk elektronik Anda pada tabel di bawah ini.</p>
+
+            <a href="form.html" class="btn btn-primary" style="margin-bottom: 15px; display: inline-block;">+ Tambah
+                Data Baru</a>
+
+            <div class="form-group" style="max-width: 400px; margin-bottom: 0;">
+                <input type="text" id="search-input" placeholder="Cari nama atau kategori produk..."
+                    style="padding: 8px 12px; width: 100%; border-radius: 4px; border: 1px solid #cbd5e1;">
+            </div>
+        </section>
+
+        <section class="table-section">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama Produk</th>
+                        <th>Kategori</th>
+                        <th>Harga (Rp)</th>
+                        <th>Stok</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-table-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>&copy; 2026 E-Katalog UMKM STIKOM Banyuwangi.</p>
+    </footer>
+    <script src="assets/js/dashboard_handler.js"></script>
+</body>
+
+</html>
